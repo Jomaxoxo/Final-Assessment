@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #9dc183;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.tasks-container {
+  background-color: #d0f0c0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-filter-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: #ffd85a;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff3bf;
+  align-items: center;
+}
+
+.header-cell,
+.task-cell {
+  display: flex;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.header-cell {
+  font-weight: bold;
+}
+
+.task-no {
+  flex: 0 0 50px;
+  text-align: center;
+}
+
+.task-description {
+  min-width: 250px;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.task-assignee {
+  text-align: left !important;
+  position: relative;
+  right: 70px;
+}
+
+.task-date {
+  min-width: 100px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-actions {
+  flex: 0 0 auto;
+  padding-left: 10px;
+}
+
+.toggle-button {
+  background-color: #2ed40d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.toggle-button:hover {
+  background-color: #0a9605;
+}
